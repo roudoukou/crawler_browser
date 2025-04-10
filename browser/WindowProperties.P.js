@@ -1,0 +1,1 @@
+catvm.DefPrototype('WindowProperties', function WindowProperties() {}, 'EventTarget')
