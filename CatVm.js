@@ -41,7 +41,7 @@ module.exports = {
         const tempfile = `${__dirname}/debbuger.js`;
         const vm = new VM();
         let catvm = Object.assign(catvmConfig, {})
-        vm.setGlobal('catvm', catvmConfig)
+        vm.setGlobal('catvm', catvm)
         return vm.run(new VMScript(vm2_code, tempfile))
     }
 }

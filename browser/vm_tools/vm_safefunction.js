@@ -20,7 +20,7 @@
     set_native(Function.prototype, 'toString', myToString)
     set_native(Function.prototype.toString, myFunction_toString_symbol, 'function toString(){ [native code] }')
     catvm.safefunction = (func) => {
-        if (typeof func !== 'function') {
+        if (typeof func === 'function') {
             set_native(func, myFunction_toString_symbol, `function ${myFunction_toString_symbol,func.name || ''}() { [native code] }`)
         }
     }
