@@ -15,7 +15,13 @@ const { prototype } = require('events');
 let catvmConfig = {
     memory: {
         prototypes: {},
-        examples: {}
+        examples: {},
+        config: {
+            proxy: true
+        }
+    },
+    DefConstructor(fn, illegal) {
+
     },
     DefPrototype(prototypeName, constructor, baseName, descriptor) {
         let prototypeBase = this.memory.prototypes['Object'];

@@ -18,6 +18,7 @@ module.exports = function(path_) {
     
 
     AddBrowser(`vm_tools/vm_safefunction.js`);
+    AddBrowser(`vm_tools/vm_proxy.js`);
 
     // 加载浏览器环境
 

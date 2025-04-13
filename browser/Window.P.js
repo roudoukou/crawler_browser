@@ -1,5 +1,5 @@
 
-var Window = function Window() {
+let Window = function Window() {
     throw new TypeError('Illegal constructor')
 }
 
